@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "mf-user",
-    "slug": "mf-user",
+    "name": "mf-sp",
+    "slug": "mf-sp",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
