@@ -58,7 +58,7 @@ const Navigation = () => {
                     </>
                     )
                 )}             */}
-                 {/* <Stack.Screen 
+                 <Stack.Screen 
                             name="Home" 
                             component={HomeScreen}
                             options={{headerShown:false}}
@@ -72,7 +72,7 @@ const Navigation = () => {
                             name="Register" 
                             component={RegisterScreen}
                             options={{headerStyle: {backgroundColor: '#0078B7',color:'#fff',}, title:'Register'}}
-                        />                   */}
+                        />                  
                          <Stack.Screen 
                             name="Dashboard" 
                             component={DrawerRoutes}
