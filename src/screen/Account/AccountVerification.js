@@ -2,12 +2,12 @@ import React from 'react';
 import {Text, View} from 'react-native';
 import 'react-native-gesture-handler';
 
-const ActivityScreen = () => {
+const AccountVerificationScreen = ({navigation}) => {
     return (
         <View>
-            <Text> Acitivity Screen</Text>
+            <Text> Account Verification</Text>
         </View>
     )
 };
 
-export default ActivityScreen;
+export default AccountVerificationScreen;

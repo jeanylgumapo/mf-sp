@@ -15,7 +15,7 @@ const LoginScreen = ({navigation}) => {
     // const val=useContext(AuthContext);
     return (
         <View style={tailwind`bg-primary flex`}>
-            <View style={tailwind`h-full bg-white rounded-t-20`}>
+            <View style={tailwind`h-full bg-white`}>
                 {/* <Spinner visible={isLoading}/> */}
                 <View style={tailwind`m-8 text-left `}>
                     <Text style={tailwind`my-4 font-bold text-3xl text-primary-color`}>Login to see our Community</Text>
@@ -43,17 +43,17 @@ const LoginScreen = ({navigation}) => {
                             onChangeText={text=> setEmail(text)}
                         />
                         <Input 
-                        placeholder="Password" 
-                        value={password}
-                        onChangeText={text=> setPassword(text)}
-                        secureTextEntry={true} />
+                            placeholder="Password" 
+                            value={password}
+                            onChangeText={text=> setPassword(text)}
+                            secureTextEntry={true} />
                         <TouchableOpacity onPress={() => navigation.navigate('ForgotPassword')}>
                             <Text style={tailwind`text-primary-color text-right`}>Forgot Password</Text>
                         </TouchableOpacity>
                         <Button  
                             title='Log in' 
                             onPress={() => 
-                                {login(email, password, navigation)} 
+                                {login(email, password, navigation, 'sp')} 
                                 // { navigation.navigate('Dashboard', login(email, password), )}
                             }
                             titleStyle={{ fontWeight: '700' }}

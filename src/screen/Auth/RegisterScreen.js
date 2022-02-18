@@ -18,7 +18,7 @@ const RegisterScreen = ({navigation}) => {
     
     return (
         <View style={tailwind`bg-primary flex`}>
-            <View style={tailwind`h-full bg-white rounded-t-20`}>
+            <View style={tailwind`h-full bg-white`}>
                 <Spinner visible={isLoading}/>
                 <View style={tailwind`m-8 text-left `}>
                     <Text style={tailwind`font-bold text-3xl text-primary-color`}>Let's create your Account</Text>
